@@ -1,0 +1,1 @@
+// define las operaciones a traves de las url que le paso al servidor
