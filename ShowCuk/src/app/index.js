@@ -1,13 +1,15 @@
-import React,{Component} from 'react';
+// import React,{Component} from 'react';
 
-import {render} from 'react-dom';
+// import {render} from 'react-dom';
 
-class App extends Component{
-    render(){
-        return(
-            <h1>Holaaaa puta</h1>
-        )
-    }
-}
+// class App extends Component{
+//     render(){
+//         return(
+//             <h1>Holaaaa puta</h1>
+//         )
+//     }
+// }
 
-render(<App></App>,document.getElementById('app'));
+// render(<App></App>,document.getElementById('app'));
+
+alert('reaaaaaaaa');
