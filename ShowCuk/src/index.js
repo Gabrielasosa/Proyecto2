@@ -14,8 +14,12 @@ app.set('port', process.env.PORT || 3000);
 app.use(morgan('dev'));
 
 app.use(express.json());
+
 //Routes
-app.use('/api/task', require('./routes/task.routes'));
+app.use('/api/menu', require('./routes/menu.routes'));
+app.use('/api/user', require('./routes/user.routes'));
+
+
 //static Files
 app.use(express.static(path.join(__dirname, 'public')));
 

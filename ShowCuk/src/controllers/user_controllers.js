@@ -1,14 +1,14 @@
 'use strict'
 
 //letiable para cifrar la contraseña
-let bcrypt = require('bcrypt-nodejs');
-let User = require('../models/user');
-let jwt = require('../services/jwt')
-let mongoosePaginate = require('mongoose-pagination');
+const bcrypt = require('bcrypt-nodejs');
+const User = require('../models/user');
+const jwt = require('../services/jwt')
+const mongoosePaginate = require('mongoose-pagination');
 
-let fs = require('fs');
+const fs = require('fs');
 
-let path = require('path');
+const path = require('path');
 
 
 //metodo de prueba
@@ -27,6 +27,7 @@ function pruebas(req, res) {
 }
 
 //funcion para guardar los usuarios
+
 function saveUser(req, res) {
     let params = req.body;
     let user = new User();
@@ -69,7 +70,8 @@ function saveUser(req, res) {
 
         })
 
-    } else {
+    } 
+    else {
         res.status(200).send({
             message: 'Escribe todos los datos necesarios'
         });
@@ -130,7 +132,7 @@ function getUser(req, res) {
 //devolver listado de todos los usuarios de manera paginada
 
 function getUsers(req, res) {
-    let identificacion_user_id = req.user.sub;
+    //let identificacion_user_id = req.user.sub;
 
     let page = 1;
 
